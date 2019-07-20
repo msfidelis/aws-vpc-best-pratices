@@ -12,7 +12,7 @@
   </a>
 </p>
 
-> Security best pratices for VPC Network architectures on AWS to improve performance, high avalilability and security for your apps
+> Personal compilation for best pratices for VPC Network architectures on AWS to improve performance, high avalilability and security for your apps
 
 ### 🏠 [Homepage](https://github.com/msfidelis/aws-vpc-best-pratices)
 
