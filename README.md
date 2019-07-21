@@ -20,6 +20,39 @@
 
 ![Network](.github/vpc.jpg)
 
+### Using two or more AZ's for high availability
+
+* 
+* 
+* 
+
+### Deploy public subnets on all AZ's
+
+* 
+* 
+* 
+
+
+### Applications on Private Subnets 
+
+* 
+* 
+* 
+
+### Route all egress trafic from private subnets to a NAT Gateway
+
+* 
+* 
+* 
+
+### Databases subnets with no internet direct access
+
+* 
+* 
+* 
+
+
+
 # Terraform Example
 
 ## Install
