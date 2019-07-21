@@ -16,6 +16,10 @@
 
 ### 🏠 [Homepage](https://github.com/msfidelis/aws-vpc-best-pratices)
 
+## Network Tips
+
+![Network](.github/vpc.jpg)
+
 ## Install
 
 ```sh
