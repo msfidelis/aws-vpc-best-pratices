@@ -51,7 +51,7 @@
 
 * VPC Endpoints can be used to improve latency performance with security with common AWS services like S3, API Gateway, SQS, ECR, SNS, DynamoDB and Load Balancers.
 
-* You can create a microservices gateway using VPC Endpoints for ALB and API Gateway 
+* You can create a microservices gateway using VPC Endpoints for ALB and API Gateway
 
 ### Route all egress traffic from private subnets to a NAT Gateway
 
