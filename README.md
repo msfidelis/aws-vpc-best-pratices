@@ -28,9 +28,9 @@
 
 ### Deploy public subnets on all AZ's
 
-* Network Load Balancers and Some Network functions needs a public subnets deployed to works fine. 
-* 
-* 
+* Network Load Balancers and Some Network functions needs a public subnets deployed to works fine.
+* If you deploy an ALB to balance the traffic between your instances or containers, technically AWS will deploy that service to a public subnet in each Availability Zone you choose to route.
+* This publics subnets can be used to deploy bastion hosts, third-part applications, satellite services like monitoring systems, CI/CD Pipeline, Big Data Services to support teams and business dynamically/
 
 
 ### Applications on Private Subnets
