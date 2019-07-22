@@ -47,13 +47,11 @@
 
 ### VPC Endpoints for AWS Services
 
-* S3
-* API Gateway
-* SQS
-* ECR
-* SNS
-* DynamoDB
-* ELB
+* Crete VPC Endpoint to consume AWS services without using a Internet Gateway or NAT Gateway with Internet Access.
+
+* VPC Endpoints can be used to improve latency performance with security with common AWS services like S3, API Gateway, SQS, ECR, SNS, DynamoDB and Load Balancers.
+
+* You can create a microservices gateway using VPC Endpoints for ALB and API Gateway 
 
 ### Route all egress traffic from private subnets to a NAT Gateway
 
