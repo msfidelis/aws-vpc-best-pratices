@@ -28,18 +28,18 @@
 
 ### Deploy public subnets on all AZ's
 
-* 
-* 
-* 
-
-
-### Applications on Private Subnets 
-
-* 
+* Network Load Balancers and Some Network functions needs a public subnets deployed to works fine. 
 * 
 * 
 
-### Route all egress trafic from private subnets to a NAT Gateway
+
+### Applications on Private Subnets
+
+* Containers, EC2 should not have accessed directly from the Internet by public IP's.
+* The application layer must be served by a single access point, such as an Application Load Balancer, Classic Load Balancer, or Network Load Balancer.
+* Nginx, HAProxy, Ingress Controllers, API Gateways, ALB, ELB, NLB deployed on Public Subnets must route all DMZ access to private subnets
+
+### Route all egress traffic from private subnets to a NAT Gateway
 
 * 
 * 
