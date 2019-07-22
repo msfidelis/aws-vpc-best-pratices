@@ -26,6 +26,12 @@
 * 
 * 
 
+### Don't use main route table
+
+* 
+* 
+* 
+
 ### Deploy public subnets on all AZ's
 
 * Network Load Balancers and Some Network functions needs a public subnets deployed to works fine.
@@ -39,9 +45,19 @@
 * The application layer must be served by a single access point, such as an Application Load Balancer, Classic Load Balancer, or Network Load Balancer.
 * Nginx, HAProxy, Ingress Controllers, API Gateways, ALB, ELB, NLB deployed on Public Subnets must route all DMZ access to private subnets
 
+### VPC Endpoints for AWS Services
+
+* S3
+* API Gateway
+* SQS
+* ECR
+* SNS
+* DynamoDB
+* ELB
+
 ### Route all egress traffic from private subnets to a NAT Gateway
 
-* 
+* Routing all internet traffic to an NAT Gateway Service you 
 * 
 * 
 
