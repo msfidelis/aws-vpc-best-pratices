@@ -78,11 +78,25 @@
 * 
 * 
 
-### AWS WAF
 
+### Network ACL's and Security Group
+
+* 
+* 
 *
-*
-*
+
+
+### Cloudfront for Content Distribution on DMZ
+
+* 
+* 
+* 
+
+### Enable AWS WAF on your Load Balancers, Cloudfront  Distribuitions or API Gateways
+
+* 
+* 
+* 
 
 # Terraform Example
 
