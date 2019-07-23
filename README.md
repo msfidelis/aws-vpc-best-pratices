@@ -22,15 +22,18 @@
 
 ### Using two or more AZ's for high availability
 
-* 
-* 
-* 
+* Deploy your services and applications on two or more Availability zone on AWS
+* This prevent total outage into your application in case of AWS failures
+* This is helps you on spot requests
+* Enable Multi A-Z on Elasticache and RDS instances
+* Create read replicas to your databases in a different AZ's
 
 ### Don't use main route table
 
-* 
-* 
-* 
+* The main route table controls the default traffic from your VPC network. For more control and compliance management, don't use it.
+* The main route table is recommended to simple and low scope architectures.
+* For more complex and compliance environment, the recommendation are create your on route tables with your rules from internet and additional VPC Peering links.
+
 
 ### Deploy public subnets on all AZ's
 
@@ -45,6 +48,7 @@
 * The application layer must be served by a single access point, such as an Application Load Balancer, Classic Load Balancer, or Network Load Balancer.
 * Nginx, HAProxy, Ingress Controllers, API Gateways, ALB, ELB, NLB deployed on Public Subnets must route all DMZ access to private subnets
 
+
 ### VPC Endpoints for AWS Services
 
 * Crete VPC Endpoint to consume AWS services without using a Internet Gateway or NAT Gateway with Internet Access.
@@ -53,17 +57,19 @@
 
 * You can create a microservices gateway using VPC Endpoints for ALB and API Gateway
 
-### Route all egress traffic from private subnets to a NAT Gateway
 
-* Routing all internet traffic to an NAT Gateway Service you 
-* 
-* 
+### Route all outbound traffic from private subnets to a NAT Gateway
+
+* Creating routing rules of all outbound traffic from the network to a NAT Gateway, you can enjoy a fixed outgoing IP
+* Fixed outbound IPs can help you identify with third-party gateways, partners, friendly firewalls, and IPsec connections for Multicloud.
+*
+
 
 ### Databases subnets with no internet direct access
 
-* 
-* 
-* 
+* For compliance management, your databases, cache layers and data warehouses like RDS, Elasticache, Elasticsearch, DB's on EC2, Redshift, Bigdata Stacks should be deployed on a segmented subnets without access to internet.
+* No data should be accessed directly from the internet., only by applications deployed on your VPC.
+* For multicloud, the recommendations are create a IPsec Connections or VPN Connections site-to-site.
 
 
 
