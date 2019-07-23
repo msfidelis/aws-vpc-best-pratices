@@ -72,6 +72,17 @@
 * For multicloud, the recommendations are create a IPsec Connections or VPN Connections site-to-site.
 
 
+### VPC Flow Logs
+
+* 
+* 
+* 
+
+### AWS WAF
+
+*
+*
+*
 
 # Terraform Example
 
