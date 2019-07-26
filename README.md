@@ -62,7 +62,6 @@
 
 * Creating routing rules of all outbound traffic from the network to a NAT Gateway, you can enjoy a fixed outgoing IP
 * Fixed outbound IPs can help you identify with third-party gateways, partners, friendly firewalls, and IPsec connections for Multicloud.
-*
 
 
 ### Databases subnets with no internet direct access
