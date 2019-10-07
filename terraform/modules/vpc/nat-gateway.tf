@@ -4,7 +4,7 @@ resource "aws_subnet" "internet_subnet_1a" {
   map_public_ip_on_launch = true
   availability_zone       = "${var.aws_region}a"
 
-  tags {
+  tags = {
     Name = "${var.project_name}-internet-1a"
   }
 }
@@ -14,7 +14,7 @@ resource "aws_nat_gateway" "nat" {
     subnet_id       = "${aws_subnet.internet_subnet_1a.id}"
     depends_on      = ["aws_internet_gateway.gw"]
 
-    tags {
+    tags = {
        Name = "${var.project_name}-nat-gateway"
     }
 }
@@ -22,7 +22,7 @@ resource "aws_nat_gateway" "nat" {
 resource "aws_route_table" "nat_route_table" {
     vpc_id = "${aws_vpc.project_vpc.id}"
 
-    tags {
+    tags = {
         Name = "${var.project_name}-nat-route-table"
     }
 }

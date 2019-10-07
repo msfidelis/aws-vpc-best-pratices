@@ -1,7 +1,7 @@
 resource "aws_route_table" "closed_route_table" {
     vpc_id = "${aws_vpc.project_vpc.id}"
 
-    tags {
+    tags = {
         Name = "${var.project_name}-closed-route-table"
     }
 }

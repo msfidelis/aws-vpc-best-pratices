@@ -1,6 +1,6 @@
 resource "aws_internet_gateway" "gw" {
     vpc_id = "${aws_vpc.project_vpc.id}"
-    tags {
+    tags = {
         Name = "${var.project_name}-igw"
     }
 }
@@ -8,7 +8,7 @@ resource "aws_internet_gateway" "gw" {
 resource "aws_route_table" "igw_route_table" {
     vpc_id = "${aws_vpc.project_vpc.id}"
 
-    tags {
+    tags = {
         Name = "${var.project_name}-public-route-table"
     }
 }

@@ -4,7 +4,7 @@ resource "aws_subnet" "database_subnet_1a" {
   map_public_ip_on_launch = false
   availability_zone       = "${var.aws_region}a"
 
-  tags {
+  tags = {
     Name = "${var.project_name}-database-1a"
   }
 }
@@ -15,7 +15,7 @@ resource "aws_subnet" "database_subnet_1b" {
   map_public_ip_on_launch = false
   availability_zone       = "${var.aws_region}b"
 
-  tags {
+  tags = {
     Name = "${var.project_name}-database-1b"
   }
 }
@@ -26,7 +26,7 @@ resource "aws_subnet" "database_subnet_1c" {
   map_public_ip_on_launch = false
   availability_zone       = "${var.aws_region}c"
 
-  tags {
+  tags = {
     Name = "${var.project_name}-database-1c"
   }
 }
