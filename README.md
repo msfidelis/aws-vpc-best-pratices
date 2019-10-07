@@ -73,16 +73,16 @@
 
 ### VPC Flow Logs
 
-* 
-* 
-* 
+*
+*
+*
 
 
 ### Network ACL's and Security Group
 
-* 
-* 
-*
+* Block all outside traffic to private subnets and allow traffic only by VPC IP Range
+* Block all egress traffic from database subnets
+* Only allow public subnet ingress to really useful public ports, like 80, 443, 22 etc.
 
 
 ### Cloudfront for Content Distribution on DMZ
