@@ -73,7 +73,7 @@
 
 ### VPC Flow Logs
 
-*
+* Enable VPC Flow logs to enhance your network monitoring
 *
 *
 
@@ -93,7 +93,7 @@
 
 ### Enable AWS WAF on your Load Balancers, Cloudfront  Distribuitions or API Gateways
 
-* 
+* [Create an simple stack to enhance your WAF Rules analysis](https://aws.amazon.com/blogs/security/how-to-analyze-aws-waf-logs-using-amazon-elasticsearch-service/) 
 * 
 * 
 
